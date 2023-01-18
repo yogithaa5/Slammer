@@ -27,13 +27,13 @@ if uploaded_file is not None:
     input_df = pd.read_csv(uploaded_file)
 else:
     def user_input_features():
-        Number_of_announcements = st.sidebar.text_input('Number_of_announcements', 0)
-        Number_of_announced_NLRI_prefixes = st.sidebar.text_input('Number_of_announced_NLRI_prefixes',0)
-        Maximum_AS_path_length = st.sidebar.text_input('Maximum_AS_path_length', 0)
-        Average_edit_distance = st.sidebar.text_input('Average_edit_distance', 0)
-        Maximum_edit_distance = st.sidebar.text_input('Maximum_edit_distance', 0)
-        Number_of_Interior_Gateway_Protocol_IGP_packets = st.sidebar.text_input('Number_of_Interior_Gateway_Protocol_IGP_packets', 0)
-        Number_of_incomplete_packets = st.sidebar.text_input('Number_of_incomplete_packets', 0)
+        Number_of_announcements = st.sidebar.text_input('Number_of_announcements >>> Input an integer value. Eg: "85","200"', 0)
+        Number_of_announced_NLRI_prefixes = st.sidebar.text_input('Number_of_announced_NLRI_prefixes >>> Input an integer value. Eg: "164","595"',0)
+        Maximum_AS_path_length = st.sidebar.text_input('Maximum_AS_path_length >>> Input an integer value. Eg: "14","18"', 0)
+        Average_edit_distance = st.sidebar.text_input('Average_edit_distance >>> Input an integer value. Eg: "14","18"', 0)
+        Maximum_edit_distance = st.sidebar.text_input('Maximum_edit_distance >>> Input a value. Eg: "1.5","3.4"', 0)
+        Number_of_Interior_Gateway_Protocol_IGP_packets = st.sidebar.text_input('Number_of_Interior_Gateway_Protocol_IGP_packets >>> Input an integer value. Eg: "79","188"', 0)
+        Number_of_incomplete_packets = st.sidebar.text_input('Number_of_incomplete_packets >>> Input an integer value. Eg: "6","12"', 0)
        
         data = {'Number_of_announcements': Number_of_announcements,
                 'Number_of_announced_NLRI_prefixes': Number_of_announced_NLRI_prefixes,
